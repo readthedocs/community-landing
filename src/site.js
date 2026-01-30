@@ -17,6 +17,7 @@ var ProjectModel = function(data) {
 
   self.name = ko.observable(data.name);
   self.meta = ko.observable(data.meta);
+  self.meta_url = ko.observable(data.meta_url || "");
   self.description = ko.observable(data.description);
   self.url = ko.observable(data.url);
   self.versions = ko.observableArray(
@@ -41,16 +42,21 @@ var VersionModel = function(data) {
 
   self.project = data.project;
   self.version = ko.observable(data.version || "latest");
-  self.language = ko.observable(data.language || "en");
+  self.language = ko.observable(data.language || "");
   self.show_language = ko.computed(function () {
-    return self.language() !== "en";
+    var language = self.language();
+    return Boolean(language && language !== "en");
   });
   self.url = ko.computed(function () {
     var url = self.project.url();
     if (!url.endsWith("/")) {
       url += "/";
     }
-    url += self.language() + "/" + self.version() + "/";
+    var language = self.language();
+    if (language) {
+      url += language + "/";
+    }
+    url += self.version() + "/";
     return url;
   });
 };

@@ -35,20 +35,22 @@ html_context = {
     "projects": [
         {
             "name": "Platform documentation",
-            "meta": "https://github.com/readthedocs/readthedocs.org",
+            "meta": "readthedocs/readthedocs.org",
+            "meta_url": "https://github.com/readthedocs/readthedocs.org",
             "description": "Guides, reference, and API docs for Read the Docs.",
-            "url": "/platform/",
+            "url": "https://docs.readthedocs.com/platform",
             "versions": [
-                {"language": "en", "version": "stable"},
+                {"language": "", "version": "stable"},
             ],
         },
         {
             "name": "Development documentation",
-            "meta": "https://github.com/readthedocs/readthedocs.org",
+            "meta": "readthedocs/readthedocs.org",
+            "meta_url": "https://github.com/readthedocs/readthedocs.org",
             "description": "Developer-focused documentation and internal workflows.",
-            "url": "/dev/",
+            "url": "https://docs.readthedocs.com/dev",
             "versions": [
-                {"language": "en", "version": "latest"},
+                {"language": "", "version": "latest"},
             ],
         },
     ],
