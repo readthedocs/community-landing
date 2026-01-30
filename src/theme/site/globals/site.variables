@@ -1,0 +1,5 @@
+@primaryColor        : @violet;
+@secondaryColor      : @black;
+@lightPrimaryColor   : @lightViolet;
+@lightSecondaryColor : @lightBlack;
+@linkColor           : @primaryColor;

@@ -1,0 +1,65 @@
+{% extends 'basic/layout.html' %}
+
+{% block heading %}{% endblock %}
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
+
+{% block extrahead %}
+  <script language="javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
+  <script language="javascript" src="{{ pathto('_static/js/data.js', 1) }}"></script>
+{% endblock %}
+
+{% block htmltitle %}
+  <title>{{ project }}</title>
+{% endblock %}
+
+{% block content %}
+  <div class="ui inverted vertical center aligned segment very padded">
+    <div class="ui text container center aligned">
+      {% if logo %}
+        <p>
+          <a href="{{ pathto(master_doc) }}">
+            <img class="ui fluid image" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
+          </a>
+        </p>
+      {% else %}
+        <h1 class="ui inverted header">{{ project }}</h1>
+      {% endif %}
+      <p>{{ theme_description }}</p>
+    </div>
+  </div>
+
+  {# Search #}
+  <div class="ui text container basic segment very padded">
+    <form class="search" action="{{ pathto('search') }}" method="get">
+      <div class="ui fluid action input">
+        <input type="text" name="q" placeholder="Search..." />
+        <button class="ui button">Search</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="ui container basic segment very padded">
+    {% block body %}{% endblock %}
+  </div>
+{% endblock %}
+
+{% block footer %}
+  <div class="ui container basic segment very padded center aligned" role="contentinfo">
+    {%- if show_copyright %}
+    {%- if hasdoc('copyright') %}
+    {% trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+    {%- else %}
+    {% trans copyright=copyright|e %}&#169; Copyright {{ copyright }}.{% endtrans %}
+    {%- endif %}
+    {%- endif %}
+    {%- if last_updated %}
+    {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+    {%- endif %}
+    {%- if show_sphinx %}
+    {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+    {%- endif %}
+  </div>
+{% endblock %}

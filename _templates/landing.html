@@ -1,0 +1,33 @@
+{% extends 'page.html' %}
+
+{% block extrahead %}
+  <link rel="stylesheet" href="{{ pathto('site.css', 1) }}" type="text/css" />
+{% endblock %}
+
+{% block body %}
+  <h1>Read the Docs documentation</h1>
+
+  <div class="rtd-docs large">
+    <div class="rtd-docs card">
+      <h2 class="rtd-docs heading">Platform documentation</h2>
+      <h3>Guides, reference, and API docs</h3>
+
+      <p>
+        Read the Docs platform documentation lives at
+        <a href="/platform/stable/">/platform/stable/</a>.
+      </p>
+    </div>
+
+    <div class="rtd-docs card">
+      <h2 class="rtd-docs heading">Metadata files</h2>
+      <h3>Crawlers and LLM metadata</h3>
+
+      <p>
+        This site hosts metadata files at
+        <a href="/llms.txt">/llms.txt</a>,
+        <a href="/robots.txt">/robots.txt</a>, and
+        <a href="/sitemap.xml">/sitemap.xml</a>.
+      </p>
+    </div>
+  </div>
+{% endblock %}

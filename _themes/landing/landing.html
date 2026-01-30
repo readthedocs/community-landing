@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  {# Project list powered with knockout #}
+  <div class="ui three stackable cards" data-bind="foreach: projects" id="docs-projects">
+
+    {# Use display: none to avoid FOUC, use visible to show the block #}
+    <div class="ui card" style="display: none;" data-bind="visible: true">
+
+      <div class="content">
+        <a class="header" data-bind="text: name"></a>
+        <span class="meta" data-bind="text: meta"></span>
+        <div class="description" data-bind="text: description"></div>
+
+        <div data-bind="visible: show_topics" style="display: none;">
+          <div class="ui horizontal divider">Topics</div>
+
+          <div class="ui vertical list" data-bind="foreach: topics">
+            <a class="item" data-bind="attr: {href: url}">
+              <i class="help icon"></i>
+              <div class="content">
+                <div class="description" data-bind="text: topic"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra content right aligned">
+        <div class="ui horizontal list" data-bind="foreach: versions">
+
+          <div class="item">
+            <a class="ui label" data-bind="attr: {href: url, title: version}" href="" title="">
+              <i class="code branch icon"></i>
+              <span data-bind="text: version"></span>
+              <span class="detail grey" data-bind="text: language, visible: show_language"></span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+{% endblock %}

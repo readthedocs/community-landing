@@ -1,0 +1,32 @@
+# Read the Docs platform documentation
+
+> https://docs.readthedocs.com/platform/stable/
+
+Read the Docs hosts documentation for your team with reliable builds, versioning, and integrations.
+
+## Documentation Structure
+
+- Getting started: /platform/stable/tutorial/
+- Guides: /platform/stable/guides/
+- Reference: /platform/stable/reference/
+- API: /platform/stable/api/
+
+## Key Features
+
+- Versioned documentation builds
+- Team access controls
+- Custom domains and branding
+- Search and analytics
+- Integrations with Git providers
+
+## Metadata files
+
+- robots.txt: /robots.txt
+- sitemap.xml: /sitemap.xml
+- llms.txt: /llms.txt
+
+## This llms.txt File
+
+This file helps AI assistants understand the structure and content of the Read the Docs platform documentation.
+
+For more information about llms.txt support on Read the Docs, see: /platform/stable/reference/llms-txt/
