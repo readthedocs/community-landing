@@ -9,11 +9,14 @@ def build_project(
     meta: str,
     meta_url: str,
     description: str,
-    url: str,
+    base_url: str,
+    default_version: str,
     versions: list[dict],
+    default_language: str = "",
 ) -> dict:
-    base_url = url.rstrip("/")
+    base_url = base_url.rstrip("/")
     rendered_versions = []
+    primary_url = ""
     for version in versions:
         language = version.get("language", "")
         version_name = version.get("version", "latest")
@@ -21,20 +24,25 @@ def build_project(
         if language:
             parts.append(language)
         parts.append(version_name)
+        version_url = "/".join(parts) + "/index.html"
+        if version_name == default_version and language == default_language:
+            primary_url = version_url
         rendered_versions.append(
             {
                 "language": language,
                 "version": version_name,
-                "url": "/".join(parts) + "/",
+                "url": version_url,
                 "show_language": bool(language and language != "en"),
             }
         )
+    if not primary_url and rendered_versions:
+        primary_url = rendered_versions[0]["url"]
     return {
         "name": name,
         "meta": meta,
         "meta_url": meta_url,
         "description": description,
-        "url": url,
+        "url": primary_url,
         "versions": rendered_versions,
         "topics": [],
     }
@@ -75,7 +83,8 @@ html_context = {
             meta="readthedocs/readthedocs.org",
             meta_url="https://github.com/readthedocs/readthedocs.org",
             description="Guides, reference, and API docs for Read the Docs.",
-            url="https://docs.readthedocs.com/platform",
+            base_url="https://docs.readthedocs.com/platform",
+            default_version="stable",
             versions=[
                 {"language": "", "version": "stable"},
             ],
@@ -85,7 +94,8 @@ html_context = {
             meta="readthedocs/readthedocs.org",
             meta_url="https://github.com/readthedocs/readthedocs.org",
             description="Developer-focused documentation and internal workflows.",
-            url="https://docs.readthedocs.com/dev",
+            base_url="https://docs.readthedocs.com/dev",
+            default_version="latest",
             versions=[
                 {"language": "", "version": "latest"},
             ],
