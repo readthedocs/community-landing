@@ -1,7 +1,10 @@
 """Read the Docs documentation landing page."""
 
+import re
+
+
 project = "Read the Docs documentation landing"
-slug = "readthedocs-landing"
+slug = re.sub(r"[^\w\s]", "", project)
 copyright = "2026, Read the Docs, Inc"
 author = "Read the Docs, Inc"
 
@@ -29,7 +32,26 @@ html_logo = "_themes/landing/static/img/logo.svg"
 html_extra_path = ["_extra"]
 
 html_context = {
-    "projects": [],
+    "projects": [
+        {
+            "name": "Platform documentation",
+            "meta": "https://github.com/readthedocs/readthedocs.org",
+            "description": "Guides, reference, and API docs for Read the Docs.",
+            "url": "/platform/",
+            "versions": [
+                {"language": "en", "version": "stable"},
+            ],
+        },
+        {
+            "name": "Development documentation",
+            "meta": "https://github.com/readthedocs/readthedocs.org",
+            "description": "Developer-focused documentation and internal workflows.",
+            "url": "/dev/",
+            "versions": [
+                {"language": "en", "version": "latest"},
+            ],
+        },
+    ],
 }
 
 # Output formats

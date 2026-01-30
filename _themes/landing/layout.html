@@ -9,6 +9,7 @@
 {% block extrahead %}
   <script language="javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
   <script language="javascript" src="{{ pathto('_static/js/data.js', 1) }}"></script>
+  <script language="javascript" src="{{ pathto('_static/js/readthedocs.js', 1) }}"></script>
 {% endblock %}
 
 {% block htmltitle %}
@@ -35,7 +36,7 @@
   <div class="ui text container basic segment very padded">
     <form class="search" action="{{ pathto('search') }}" method="get">
       <div class="ui fluid action input">
-        <input type="text" name="q" placeholder="Search..." />
+        <input type="search" id="rtd-search-input" name="q" placeholder="Search..." />
         <button class="ui button">Search</button>
       </div>
     </form>
