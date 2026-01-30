@@ -17,13 +17,21 @@
             <span class="meta">{{ project.meta }}</span>
           {% endif %}
           <div class="description">{{ project.description }}</div>
-          <div class="ui small labels" style="margin-top: 0.75rem;">
-            <a class="ui label" href="{{ project.url }}">
+          <div class="ui small labels" style="margin-top: 0.75rem; gap: 0.5rem; flex-wrap: wrap;">
+            <a
+              class="ui label"
+              href="{{ project.url }}"
+              style="max-width: 100%; white-space: normal; overflow-wrap: anywhere;"
+            >
               <i class="linkify icon"></i>
               {{ project.url }}
             </a>
             {% if project.meta_url %}
-              <a class="ui label" href="{{ project.meta_url }}">
+              <a
+                class="ui label"
+                href="{{ project.meta_url }}"
+                style="max-width: 100%; white-space: normal; overflow-wrap: anywhere;"
+              >
                 <i class="github icon"></i>
                 {{ project.meta_url }}
               </a>
