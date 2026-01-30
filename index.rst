@@ -1,5 +1,5 @@
-Read the Docs documentation landing
-==================================
+Read the Docs documentation
+===========================
 
 This site provides the landing page for Read the Docs documentation and hosts
 metadata files used by crawlers and LLMs.
