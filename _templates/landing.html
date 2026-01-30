@@ -17,6 +17,18 @@
             <span class="meta">{{ project.meta }}</span>
           {% endif %}
           <div class="description">{{ project.description }}</div>
+          <div class="ui small labels" style="margin-top: 0.75rem;">
+            <a class="ui label" href="{{ project.url }}">
+              <i class="linkify icon"></i>
+              {{ project.url }}
+            </a>
+            {% if project.meta_url %}
+              <a class="ui label" href="{{ project.meta_url }}">
+                <i class="github icon"></i>
+                {{ project.meta_url }}
+              </a>
+            {% endif %}
+          </div>
 
           {% if project.topics %}
             <div>
@@ -55,6 +67,8 @@
     {% endfor %}
   </div>
 
+  <div class="ui hidden divider"></div>
+
   <div class="ui raised segment">
     <h2 class="ui header">Get started</h2>
     <p>Shortcuts to the most common starting points in the Read the Docs documentation.</p>
@@ -80,6 +94,8 @@
     </div>
   </div>
 
+  <div class="ui hidden divider"></div>
+
   <div class="ui raised segment">
     <h2 class="ui header">Core workflows</h2>
     <div class="ui three stackable cards">
@@ -104,6 +120,8 @@
     </div>
   </div>
 
+  <div class="ui hidden divider"></div>
+
   <div class="ui raised segment">
     <h2 class="ui header">Reference</h2>
     <div class="ui three stackable cards">
@@ -127,6 +145,8 @@
       </div>
     </div>
   </div>
+
+  <div class="ui hidden divider"></div>
 
   <div class="ui raised segment">
     <h2 class="ui header">Metadata files</h2>
