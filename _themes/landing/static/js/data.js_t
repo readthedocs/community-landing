@@ -1,5 +1,3 @@
 const projects = {{ projects }};
 
 ProjectView.init(projects);
-
-window.PPP = ProjectModel(projects[0]);
