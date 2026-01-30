@@ -17,15 +17,12 @@
 {% block content %}
   <div class="ui inverted vertical center aligned segment very padded">
     <div class="ui text container center aligned">
-      {% if logo %}
-        <p>
-          <a href="{{ pathto(master_doc) }}">
-            <img class="ui fluid image" src="{{ pathto('_static/' + logo, 1) }}" alt="Logo"/>
-          </a>
-        </p>
-      {% else %}
-        <h1 class="ui inverted header">{{ project }}</h1>
-      {% endif %}
+      {% set header_logo = logo or "logo.svg" %}
+      <p>
+        <a href="{{ pathto(master_doc) }}">
+          <img class="ui fluid image" src="{{ pathto('_static/' + header_logo, 1) }}" alt="Logo"/>
+        </a>
+      </p>
       <p>{{ theme_description }}</p>
     </div>
   </div>
