@@ -1,6 +1,6 @@
 # Read the Docs platform documentation (full context)
 
-> https://docs.readthedocs.com/platform/latest/
+> https://docs.readthedocs.com/platform/stable/
 
 Read the Docs hosts documentation for your team with reliable builds, versioning, and integrations.
 
@@ -9,39 +9,39 @@ This file provides comprehensive documentation context for AI assistants.
 ## Documentation Structure
 
 ### Getting Started
-- Tutorial: https://docs.readthedocs.com/platform/latest/tutorial.html
-- Installation: https://docs.readthedocs.com/platform/latest/tutorial/install.html
-- First build: https://docs.readthedocs.com/platform/latest/tutorial/build.html
+- Tutorial: https://docs.readthedocs.com/platform/stable/tutorial.html
+- Installation: https://docs.readthedocs.com/platform/stable/tutorial/install.html
+- First build: https://docs.readthedocs.com/platform/stable/tutorial/build.html
 
 ### Guides
-- Build configuration: https://docs.readthedocs.com/platform/latest/guides/build.html
-- Custom domains: https://docs.readthedocs.com/platform/latest/guides/custom-domains.html
-- Webhooks: https://docs.readthedocs.com/platform/latest/guides/webhooks.html
-- Environment variables: https://docs.readthedocs.com/platform/latest/guides/environment-variables.html
-- Build customization: https://docs.readthedocs.com/platform/latest/guides/build-customization.html
-- Redirects: https://docs.readthedocs.com/platform/latest/guides/redirects.html
-- Integrations: https://docs.readthedocs.com/platform/latest/guides/integrations.html
+- Build configuration: https://docs.readthedocs.com/platform/stable/guides/build.html
+- Custom domains: https://docs.readthedocs.com/platform/stable/guides/custom-domains.html
+- Webhooks: https://docs.readthedocs.com/platform/stable/guides/webhooks.html
+- Environment variables: https://docs.readthedocs.com/platform/stable/guides/environment-variables.html
+- Build customization: https://docs.readthedocs.com/platform/stable/guides/build-customization.html
+- Redirects: https://docs.readthedocs.com/platform/stable/guides/redirects.html
+- Integrations: https://docs.readthedocs.com/platform/stable/guides/integrations.html
 
 ### Reference
-- Configuration file: https://docs.readthedocs.com/platform/latest/reference/yaml.html
-- Build process: https://docs.readthedocs.com/platform/latest/reference/builds.html
-- Environment: https://docs.readthedocs.com/platform/latest/reference/environment.html
-- Versions: https://docs.readthedocs.com/platform/latest/reference/versions.html
-- Subprojects: https://docs.readthedocs.com/platform/latest/reference/subprojects.html
-- Notifications: https://docs.readthedocs.com/platform/latest/reference/notifications.html
-- Analytics: https://docs.readthedocs.com/platform/latest/reference/analytics.html
-- Security: https://docs.readthedocs.com/platform/latest/reference/security.html
-- robots.txt: https://docs.readthedocs.com/platform/latest/reference/robots.html
-- sitemap.xml: https://docs.readthedocs.com/platform/latest/reference/sitemaps.html
-- 404 pages: https://docs.readthedocs.com/platform/latest/reference/404-not-found.html
-- llms.txt: https://docs.readthedocs.com/platform/latest/reference/llms-txt.html
+- Configuration file: https://docs.readthedocs.com/platform/stable/reference/yaml.html
+- Build process: https://docs.readthedocs.com/platform/stable/reference/builds.html
+- Environment: https://docs.readthedocs.com/platform/stable/reference/environment.html
+- Versions: https://docs.readthedocs.com/platform/stable/reference/versions.html
+- Subprojects: https://docs.readthedocs.com/platform/stable/reference/subprojects.html
+- Notifications: https://docs.readthedocs.com/platform/stable/reference/notifications.html
+- Analytics: https://docs.readthedocs.com/platform/stable/reference/analytics.html
+- Security: https://docs.readthedocs.com/platform/stable/reference/security.html
+- robots.txt: https://docs.readthedocs.com/platform/stable/reference/robots.html
+- sitemap.xml: https://docs.readthedocs.com/platform/stable/reference/sitemaps.html
+- 404 pages: https://docs.readthedocs.com/platform/stable/reference/404-not-found.html
+- llms.txt: https://docs.readthedocs.com/platform/stable/reference/llms-txt.html
 
 ### API Documentation
-- API v3: https://docs.readthedocs.com/platform/latest/api/v3.html
-- Authentication: https://docs.readthedocs.com/platform/latest/api/v3.html#authentication
-- Projects: https://docs.readthedocs.com/platform/latest/api/v3.html#projects
-- Versions: https://docs.readthedocs.com/platform/latest/api/v3.html#versions
-- Builds: https://docs.readthedocs.com/platform/latest/api/v3.html#builds
+- API v3: https://docs.readthedocs.com/platform/stable/api/v3.html
+- Authentication: https://docs.readthedocs.com/platform/stable/api/v3.html#authentication
+- Projects: https://docs.readthedocs.com/platform/stable/api/v3.html#projects
+- Versions: https://docs.readthedocs.com/platform/stable/api/v3.html#versions
+- Builds: https://docs.readthedocs.com/platform/stable/api/v3.html#builds
 
 ## Key Features
 
@@ -94,7 +94,7 @@ Documentation projects are configured via `.readthedocs.yaml`:
 ## Support
 
 - Documentation: https://docs.readthedocs.com/
-- Community support: https://docs.readthedocs.com/platform/latest/support.html
+- Community support: https://docs.readthedocs.com/platform/stable/support.html
 - Status page: https://status.readthedocs.com/
 - Blog: https://about.readthedocs.com/blog/
 
@@ -102,4 +102,4 @@ Documentation projects are configured via `.readthedocs.yaml`:
 
 This llms-full.txt provides comprehensive context for AI assistants about the Read the Docs platform documentation, including detailed structure, features, and configuration options.
 
-For information about llms.txt support on Read the Docs, see: https://docs.readthedocs.com/platform/latest/reference/llms-txt.html
+For information about llms.txt support on Read the Docs, see: https://docs.readthedocs.com/platform/stable/reference/llms-txt.html
