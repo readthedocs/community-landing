@@ -1,0 +1,105 @@
+# Read the Docs platform documentation (full context)
+
+> https://docs.readthedocs.com/platform/stable/
+
+Read the Docs hosts documentation for your team with reliable builds, versioning, and integrations.
+
+This file provides comprehensive documentation context for AI assistants.
+
+## Documentation Structure
+
+### Getting Started
+- Tutorial: /platform/stable/tutorial/
+- Installation: /platform/stable/tutorial/install/
+- First build: /platform/stable/tutorial/build/
+
+### Guides
+- Build configuration: /platform/stable/guides/build/
+- Custom domains: /platform/stable/guides/custom-domains/
+- Webhooks: /platform/stable/guides/webhooks/
+- Environment variables: /platform/stable/guides/environment-variables/
+- Build customization: /platform/stable/guides/build-customization/
+- Redirects: /platform/stable/guides/redirects/
+- Integrations: /platform/stable/guides/integrations/
+
+### Reference
+- Configuration file: /platform/stable/reference/yaml/
+- Build process: /platform/stable/reference/builds/
+- Environment: /platform/stable/reference/environment/
+- Versions: /platform/stable/reference/versions/
+- Subprojects: /platform/stable/reference/subprojects/
+- Notifications: /platform/stable/reference/notifications/
+- Analytics: /platform/stable/reference/analytics/
+- Security: /platform/stable/reference/security/
+- robots.txt: /platform/stable/reference/robots/
+- sitemap.xml: /platform/stable/reference/sitemaps/
+- 404 pages: /platform/stable/reference/404-not-found/
+- llms.txt: /platform/stable/reference/llms-txt/
+
+### API Documentation
+- API v3: /platform/stable/api/v3/
+- Authentication: /platform/stable/api/v3/#authentication
+- Projects: /platform/stable/api/v3/#projects
+- Versions: /platform/stable/api/v3/#versions
+- Builds: /platform/stable/api/v3/#builds
+
+## Key Features
+
+### Build System
+- Automatic builds from Git commits
+- Support for Sphinx and MkDocs
+- Multiple Python versions
+- Conda environment support
+- Custom build commands
+
+### Hosting
+- Versioned documentation URLs
+- Custom domains with SSL
+- CDN-backed delivery
+- Public and private documentation
+
+### Team Management
+- Organizations and teams
+- Access control and permissions
+- Single Sign-On (SSO)
+- Audit logs
+
+### Integrations
+- GitHub, GitLab, Bitbucket
+- Pull request previews
+- Webhooks for automation
+- Status badges
+
+### Analytics
+- Search analytics
+- Page view tracking
+- Traffic insights
+- Download metrics
+
+## Configuration
+
+Documentation projects are configured via `.readthedocs.yaml`:
+- Build OS and tools
+- Python version and dependencies
+- Build commands
+- Output formats (HTML, PDF, ePub)
+
+## Metadata Files
+
+- robots.txt: /robots.txt
+- sitemap.xml: /sitemap.xml
+- llms.txt: /llms.txt
+- llms-full.txt: /llms-full.txt
+
+## Support
+
+- Documentation: https://docs.readthedocs.com/
+- Community support: https://docs.readthedocs.com/platform/stable/support/
+- Status page: https://status.readthedocs.com/
+- Blog: https://about.readthedocs.com/blog/
+
+## About This File
+
+This llms-full.txt provides comprehensive context for AI assistants about the Read the Docs platform documentation, including detailed structure, features, and configuration options.
+
+For information about llms.txt support on Read the Docs, see: /platform/stable/reference/llms-txt/
