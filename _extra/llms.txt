@@ -6,10 +6,37 @@ Read the Docs hosts documentation for your team with reliable builds, versioning
 
 ## Documentation Structure
 
-- Getting started: /platform/stable/tutorial/
-- Guides: /platform/stable/guides/
-- Reference: /platform/stable/reference/
-- API: /platform/stable/api/
+### Getting Started
+- Tutorial: https://docs.readthedocs.com/platform/stable/tutorial/index.html
+- Adding a documentation project: https://docs.readthedocs.com/platform/stable/intro/add-project.html
+- Popular documentation tools: https://docs.readthedocs.com/platform/stable/intro/doctools.html
+- Example projects: https://docs.readthedocs.com/platform/stable/examples.html
+
+### Project Setup and Configuration
+- Configuration file overview: https://docs.readthedocs.com/platform/stable/config-file/index.html
+- Configuration file reference: https://docs.readthedocs.com/platform/stable/config-file/v2.html
+- Read the Docs Addons: https://docs.readthedocs.com/platform/stable/addons.html
+
+### Build Process
+- Build process overview: https://docs.readthedocs.com/platform/stable/builds.html
+- Build process customization: https://docs.readthedocs.com/platform/stable/build-customization.html
+- Environment variables: https://docs.readthedocs.com/platform/stable/reference/environment-variables.html
+
+### Hosting Documentation
+- Versions: https://docs.readthedocs.com/platform/stable/versions.html
+- Custom domains: https://docs.readthedocs.com/platform/stable/custom-domains.html
+- Sitemap support: https://docs.readthedocs.com/platform/stable/reference/sitemaps.html
+- robots.txt support: https://docs.readthedocs.com/platform/stable/reference/robots.html
+- llms.txt support: https://docs.readthedocs.com/platform/stable/reference/llms-txt.html
+
+### Maintaining Projects
+- Redirects: https://docs.readthedocs.com/platform/stable/user-defined-redirects.html
+- Traffic analytics: https://docs.readthedocs.com/platform/stable/traffic-analytics.html
+- Security logs: https://docs.readthedocs.com/platform/stable/security-log.html
+
+### Reference
+- Public REST API: https://docs.readthedocs.com/platform/stable/api/index.html
+- Frequently asked questions: https://docs.readthedocs.com/platform/stable/faq.html
 
 ## Key Features
 
@@ -19,14 +46,15 @@ Read the Docs hosts documentation for your team with reliable builds, versioning
 - Search and analytics
 - Integrations with Git providers
 
-## Metadata files
+## Metadata Files
 
-- robots.txt: /robots.txt
-- sitemap.xml: /sitemap.xml
-- llms.txt: /llms.txt
+- robots.txt: https://docs.readthedocs.com/robots.txt
+- sitemap.xml: https://docs.readthedocs.com/sitemap.xml
+- llms.txt: https://docs.readthedocs.com/llms.txt
+- llms-full.txt: https://docs.readthedocs.com/llms-full.txt
 
 ## This llms.txt File
 
 This file helps AI assistants understand the structure and content of the Read the Docs platform documentation.
 
-For more information about llms.txt support on Read the Docs, see: /platform/stable/reference/llms-txt/
+For more information about llms.txt support on Read the Docs, see: https://docs.readthedocs.com/platform/stable/reference/llms-txt.html
