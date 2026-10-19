@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# "latest" is a hidden version of the platform docs; "stable" is the canonical one.
+Disallow: /platform/latest/
 
 Sitemap: https://docs.readthedocs.com/sitemap.xml
